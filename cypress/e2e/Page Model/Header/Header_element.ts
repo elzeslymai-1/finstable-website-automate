@@ -1,4 +1,5 @@
 export class Header_Element{
+    //Act
     header_finstable_btn = '[data-test-id="finstable"]'
     header_home_btn = '[data-test-id="home"]'
     header_about_us_btn = '[data-test-id="about"]'
@@ -10,4 +11,8 @@ export class Header_Element{
     header_lang_dropdown = '[data-test-id="language"]'
     lang_th_dropdown_opt = '[data-test-id="th-lang"]'
     lang_en_dropdown_opt = '[data-test-id="en-lang"]'
+
+    //Assert
+    assert_lang_th = ''
+    assert_lang_en = ''
 }
