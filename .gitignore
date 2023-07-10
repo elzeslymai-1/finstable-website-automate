@@ -1,0 +1,8 @@
+
+Cypress.env.json
+
+# dependencies
+/node_modules
+.idea
+cypress/videos
+cypress/reports
