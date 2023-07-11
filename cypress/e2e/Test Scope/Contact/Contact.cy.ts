@@ -5,8 +5,8 @@ import { Contact_Model } from "../../Page Model/Contact Page/Contact_model";
 
 const action = new Actions()
 const assert = new Assertion()
-const contact = new Contact_Element()
-const element = new Contact_Model()
+const element = new Contact_Element()
+const contact = new Contact_Model()
 
 describe('contact Page Test',()=>{
     it('',()=>{

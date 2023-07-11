@@ -5,8 +5,8 @@ import { OurService_Model } from "../../Page Model/OurService Page/OurService_mo
 
 const action = new Actions()
 const assert = new Assertion()
-const service = new OurService_Element()
-const element = new OurService_Model()
+const element = new OurService_Element()
+const service = new OurService_Model()
 
 describe('Our Service Page Test',()=>{
     it('',()=>{
