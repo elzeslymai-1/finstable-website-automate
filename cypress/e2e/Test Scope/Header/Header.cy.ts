@@ -5,8 +5,8 @@ import { Header_Model } from "../../Page Model/Header/Header_model";
 
 const action = new Actions()
 const assert = new Assertion()
-const header = new Header_Element()
-const element = new Header_Model()
+const element = new Header_Element()
+const header = new Header_Model()
 
 describe('Header Test', () => {
     before(()=>{
@@ -16,60 +16,60 @@ describe('Header Test', () => {
 
         it('[Check Element] => Finstable Logo btn', () => {
             //Assert
-            assert.check_Element(header.header_finstable_btn)
+            assert.check_Element(element.header_finstable_btn)
         })
 
         it('[Check Element] => Home btn', () => {
             //Assert
-            assert.check_Element(header.header_home_btn)
+            assert.check_Element(element.header_home_btn)
         })
 
         it('[Check Element] => About US btn', () => {
             //Assert
-            assert.check_Element(header.header_about_us_btn)
+            assert.check_Element(element.header_about_us_btn)
         })
 
         it('[Check Element] => Our Service btn', () => {
             //Assert
-            assert.check_Element(header.header_our_service_btn)
+            assert.check_Element(element.header_our_service_btn)
         })
 
         it('[Check Element] => Documnet btn', () => {
             //Assert
-            assert.check_Element(header.header_document_btn)
+            assert.check_Element(element.header_document_btn)
         })
 
         it('[Check Element] => Event btn', () => {
             //Assert
-            assert.check_Element(header.header_event_btn)
+            assert.check_Element(element.header_event_btn)
         })
 
         it('[Check Element] => Career Opportunity btn', () => {
             //assert
-            assert.check_Element(header.header_career_btn)
+            assert.check_Element(element.header_career_btn)
         })
 
         it('[Check Element] => Contact btn', () => {
             //assert
-            assert.check_Element(header.header_contact_btn)
+            assert.check_Element(element.header_contact_btn)
         })
 
         it('[Check Element] => Language dropdown', () => {
             //assert
-            assert.check_Element(header.header_lang_dropdown)
+            assert.check_Element(element.header_lang_dropdown)
         })
 
         it('[Check Element] => Language TH option', () => {
             //Act
-            action.click(header.header_lang_dropdown)
+            action.click(element.header_lang_dropdown)
 
             //assert
-            assert.check_Element(header.lang_th_dropdown_opt)
+            assert.check_Element(element.lang_th_dropdown_opt)
         })
 
         it('[Check Element] => Language EN option', () => {
             //assert
-            assert.check_Element(header.lang_en_dropdown_opt)
+            assert.check_Element(element.lang_en_dropdown_opt)
         })
     })
 
@@ -77,7 +77,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Finstable Logo btn', () => {
             //Act
-            action.click(header.header_finstable_btn)
+            action.click(element.header_finstable_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en')
@@ -85,7 +85,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Home btn', () => {
             //Act
-            action.click(header.header_home_btn)
+            action.click(element.header_home_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en')
@@ -93,7 +93,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => About US btn', () => {
             //Act
-            action.click(header.header_about_us_btn)
+            action.click(element.header_about_us_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/about-us')
@@ -101,7 +101,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Our Service btn', () => {
             //Act
-            action.click(header.header_our_service_btn)
+            action.click(element.header_our_service_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/our-service')
@@ -109,7 +109,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Documnet btn', () => {
             //Act
-            action.click(header.header_document_btn)
+            action.click(element.header_document_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/documents')
@@ -117,7 +117,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Event btn', () => {
             //Act
-            action.click(header.header_event_btn)
+            action.click(element.header_event_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/event')
@@ -125,7 +125,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Career Opportunity btn', () => {
             //Act
-            action.click(header.header_career_btn)
+            action.click(element.header_career_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/career-opportunity')
@@ -133,7 +133,7 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Contact btn', () => {
             //Act
-            action.click(header.header_contact_btn)
+            action.click(element.header_contact_btn)
 
             //Assert
             assert.check_url('https://devwebfin.finstable.co.th/en/contacts')
@@ -141,27 +141,27 @@ describe('Header Test', () => {
 
         it('[Check Action Click] => Language dropdown', () => {
             //Act
-            action.click(header.header_lang_dropdown)
+            action.click(element.header_lang_dropdown)
 
             //Assert
-            assert.check_text(header.lang_th_dropdown_opt,'TH')
-            assert.check_text(header.lang_en_dropdown_opt,'EN')
+            assert.check_text(element.lang_th_dropdown_opt,'TH')
+            assert.check_text(element.lang_en_dropdown_opt,'EN')
         })
 
         it('[Check Action Click] => Language TH option', () => {
             //Act
-            action.click(header.lang_th_dropdown_opt)
+            action.click(element.lang_th_dropdown_opt)
 
             //Assert
-            assert.check_text(header.assert_lang_th,'TH')
+            assert.check_text(element.assert_lang_th,'TH')
         })
 
         it('[Check Action Click] => Language EN btn', () => {
             //Act
-            action.click(header.lang_en_dropdown_opt)
+            action.click(element.lang_en_dropdown_opt)
 
             //Assert
-            assert.check_text(header.assert_lang_en,'EN')
+            assert.check_text(element.assert_lang_en,'EN')
         })
     })
 
