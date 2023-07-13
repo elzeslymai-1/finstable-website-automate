@@ -4,6 +4,6 @@ import { Assertion } from "../../Main Component/Assert";
 const action = new Actions()
 const assert = new Assertion()
 
-export class Footer_Model{
+export class Footer_Model extends Assertion{
     
 }

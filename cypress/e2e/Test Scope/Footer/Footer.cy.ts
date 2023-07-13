@@ -1,12 +1,10 @@
 import { Actions } from "../../Main Component/Action";
-import { Assertion } from "../../Main Component/Assert";
 import { Footer_Element } from "../../Page Model/Footer/Footer_element";
 import { Footer_Model } from "../../Page Model/Footer/Footer_model";
 
 const action = new Actions()
-const assert = new Assertion()
 const element = new Footer_Element()
-const footer = new Footer_Model()
+const assert = new Footer_Model()
 
 describe('Footer Test', () => {
     before(() => {

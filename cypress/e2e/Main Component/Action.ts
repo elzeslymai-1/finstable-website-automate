@@ -63,4 +63,8 @@ export class Actions {
     select_dropdown_option(locator: string, option: string) {
         cy.get(locator).select(option)
     }
+
+    mouse_hover(locator: string) {
+        cy.get(locator).trigger('mouseover')
+    }
 }

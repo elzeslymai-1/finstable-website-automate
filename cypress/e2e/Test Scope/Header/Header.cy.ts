@@ -1,12 +1,10 @@
 import { Actions } from "../../Main Component/Action";
-import { Assertion } from "../../Main Component/Assert";
 import { Header_Element } from "../../Page Model/Header/Header_element";
 import { Header_Model } from "../../Page Model/Header/Header_model";
 
 const action = new Actions()
-const assert = new Assertion()
 const element = new Header_Element()
-const header = new Header_Model()
+const assert = new Header_Model()
 
 describe('Header Test', () => {
     before(()=>{
@@ -17,6 +15,7 @@ describe('Header Test', () => {
         it('[Check Element] => Finstable Logo btn', () => {
             //Assert
             assert.check_Element(element.header_finstable_btn)
+            
         })
 
         it('[Check Element] => Home btn', () => {

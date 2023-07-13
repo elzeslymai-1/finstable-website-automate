@@ -20,6 +20,15 @@ export class Assertion {
         })
     }
 
+    // check text contain one or two string
+    check_text_2_opt(locator: string, text1_val: string, text2_val: string) {
+        cy.get(locator)
+            .invoke('text')
+            .then((text) => {
+                expect(text).to.be.oneOf([text1_val, text2_val])
+            })
+    }
+
     //check value
     check_value(locator: string, value: string) {
         cy.get(locator).then((data) => {
@@ -40,9 +49,27 @@ export class Assertion {
     }
 
     // check attr
-    check_attr(locator: string, value: string) {
+    check_attr(locator: string, attr_val: string, value: string) {
         cy.get(locator)
-            .invoke('attr', 'class')
+            .invoke('attr', attr_val)
             .should('contain', value)
     }
+
+    //check scroll down
+    check_scroll_down() {
+        cy.window().then((win) => {
+            const { scrollY } = win;
+            // Perform assertions based on the scroll position, e.g.
+            expect(scrollY).to.be.greaterThan(0); // Check if scrollY is greater than 0
+        })
+    }
+
+    check_scroll_top() {
+        cy.window().then((win) => {
+            const { scrollY } = win;
+            // Perform assertions based on the scroll position, e.g.
+            expect(scrollY).to.be.equal(0); // Check if scrollY is greater than 0
+        })
+    }
+
 }
