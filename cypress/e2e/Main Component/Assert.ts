@@ -1,8 +1,14 @@
 export class Assertion {
     // check that have element
-    check_Element(element_locator: string) {
-        cy.get(element_locator).then((data) => {
+    check_Element(locator: string) {
+        cy.get(locator).then((data) => {
             expect(data.length).equal(1)
+        })
+    }
+
+    check_not_found_element(locator: string) {
+        cy.get('body').then((data) => {
+            expect(data.find(locator)).equal(0)
         })
     }
 
