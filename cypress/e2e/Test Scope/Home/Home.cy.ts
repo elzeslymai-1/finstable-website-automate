@@ -1,10 +1,12 @@
 import { Actions } from "../../Main Component/Action";
 import { Homepage_Model } from "../../Page Model/Home Page/Home_model";
 import { Homepage_Element } from "../../Page Model/Home Page/Home_element";
+import { Homepage_Expect } from "../../Page Model/Home Page/Home_expect";
 
 const action = new Actions()
 const element = new Homepage_Element()
 const assert = new Homepage_Model()
+const expect = new Homepage_Expect()
 
 describe('Home Page Test', () => {
     before(() => {
@@ -12,183 +14,107 @@ describe('Home Page Test', () => {
     })
     context('Check Home Element is Displayed', () => {
 
-        it('[Check Element] => Contact btn', () => {
+        it('[Element] => Contact btn', () => {
             //Assert
             assert.check_Element(element.contact_btn)
-            assert.check_text(element.contact_btn, 'Contact Us')
         })
 
-        it('[Check Element] => Next btn', () => {
+        it('[Element] => Next btn', () => {
             //Assert
             assert.check_Element(element.next_btn)
-            assert.check_text(element.next_btn, 'Next >>')
         })
 
-        it('[Check Element] => Scroll Down btn', () => {
+        it('[Element] => Scroll Down btn', () => {
             //Assert
             assert.check_Element(element.scroll_down_btn)
-            assert.check_text(element.scroll_down_btn, 'Scroll down')
         })
 
-        it('[Check Element] => Rocket btn', () => {
+        it('[Element] => Rocket btn', () => {
             //Assert
             assert.check_Element(element.rocket_btn)
         })
 
-        it('[Check Element] => Project Profiling card', () => {
+        it('[Element] => Project Profiling card', () => {
             //Assert
             assert.check_Element(element.profiling_card)
-            assert.check_text(element.profiling_card, 'Project profiling')
         })
 
-        it('[Check Element] => Token Economics card', () => {
+        it('[Element] => Token Economics card', () => {
             //Assert
             assert.check_Element(element.token_eco_card)
-            assert.check_text(element.token_eco_card, 'Token Economics')
         })
 
-        it('[Check Element] => Tokenization card', () => {
+        it('[Element] => Tokenization card', () => {
             //assert
             assert.check_Element(element.tokenization_card)
-            assert.check_text(element.tokenization_card, 'Tokenization')
         })
 
-        it('[Check Element] => Blockchain Applications card', () => {
+        it('[Element] => Blockchain Applications card', () => {
             //assert
             assert.check_Element(element.blockain_card)
-            assert.check_text(element.blockain_card, 'Blockchain Applications')
         })
 
-        it('[Check Element] => Project Launching card', () => {
+        it('[Element] => Project Launching card', () => {
             //assert
             assert.check_Element(element.project_launch_card)
-            assert.check_text(element.project_launch_card, 'Project Launching')
         })
 
-        it('[Check Element] => Market Maker card', () => {
+        it('[Element] => Market Maker card', () => {
             //assert
             assert.check_Element(element.market_maker_card)
-            assert.check_text(element.market_maker_card, 'Market Maker')
         })
 
-        it('[Check Element] => Select Card 1 btn', () => {
-            //assert
-            assert.check_Element(element.select_card1_btn)
-        })
-
-        it('[Check Element] => Select Card 2 btn', () => {
-            //assert
-            assert.check_Element(element.select_card2_btn)
-        })
-
-        it('[Check Element] => Select Card 3 btn', () => {
-            //assert
-            assert.check_Element(element.select_card3_btn)
-        })
-
-        it('[Check Element] => Select Card 4 btn', () => {
-            //assert
-            assert.check_Element(element.select_card4_btn)
-        })
-
-        it('[Check Element] => Select Card 5 btn', () => {
-            //assert
-            assert.check_Element(element.select_card5_btn)
-        })
-
-        it('[Check Element] => Select Card 6 btn', () => {
-            //assert
-            assert.check_Element(element.select_card6_btn)
-        })
-
-        it('[Check Element] => Card 1 btn', () => {
-            //act
-            action.click(element.select_card1_btn)
-
+        it('[Element] => Card 1 btn', () => {
             //assert
             assert.check_Element(element.card1_btn)
         })
 
-        it('[Check Element] => Card 2 btn', () => {
-            //act
-            action.click(element.select_card2_btn)
-
+        it('[Element] => Card 2 btn', () => {
             //assert
             assert.check_Element(element.card2_btn)
         })
 
-        it('[Check Element] => Card 3 btn', () => {
-            //act
-            action.click(element.select_card3_btn)
-
+        it('[Element] => Card 3 btn', () => {
             //assert
             assert.check_Element(element.card3_btn)
         })
 
-        it('[Check Element] => Card 4 btn', () => {
-            //act
-            action.click(element.select_card4_btn)
-
-            //assert
-            assert.check_Element(element.card4_btn)
-        })
-
-        it('[Check Element] => Card 5 btn', () => {
-            //act
-            action.click(element.select_card5_btn)
-
-            //assert
-            assert.check_Element(element.card5_btn)
-        })
-
-        it('[Check Element] => Card 6 btn', () => {
-            //act
-            action.click(element.select_card6_btn)
-
-            //assert
-            assert.check_Element(element.card6_btn)
-        })
-
-        it('[Check Element] => Our Work Read More btn', () => {
+        it('[Element] => Our Work Read More btn', () => {
             //assert
             assert.check_Element(element.read_more_btn)
-            assert.check_text(element.read_more_btn, 'Read More >')
         })
 
-        it('[Check Element] => All Event btn', () => {
+        it('[Element] => All Event btn', () => {
             //assert
             assert.check_Element(element.all_btn)
-            assert.check_text(element.all_btn, 'All')
         })
 
-        it('[Check Element] => Upcoming Event btn', () => {
+        it('[Element] => Upcoming Event btn', () => {
             //assert
             assert.check_Element(element.upcoming_event_btn)
-            assert.check_text(element.upcoming_event_btn, 'Upcoming Events')
         })
 
-        it('[Check Element] => Past Event btn', () => {
+        it('[Element] => Past Event btn', () => {
             //assert
             assert.check_Element(element.past_event_btn)
-            assert.check_text(element.past_event_btn, 'Past Events')
         })
 
-        it('[Check Element] => Event Page 1 btn', () => {
+        it('[Element] => Event Page 1 btn', () => {
             //assert
             assert.check_Element(element.page1_btn)
         })
 
-        it('[Check Element] => Event Page 2 btn', () => {
+        it('[Element] => Event Page 2 btn', () => {
             //assert
             assert.check_Element(element.page2_btn)
         })
 
-        it('[Check Element] => Event Page 3 btn', () => {
+        it('[Element] => Event Page 3 btn', () => {
             //assert
             assert.check_Element(element.page3_btn)
         })
 
-        it('[Check Element] => All - Event Card 1 btn', () => {
+        it('[Element] => All - Event Card 1 btn', () => {
             //act
             action.click(element.all_btn)
 
@@ -196,7 +122,7 @@ describe('Home Page Test', () => {
             assert.check_Element(element.all_event_card1)
         })
 
-        it('[Check Element] => All - Event Card 2 btn', () => {
+        it('[Element] => All - Event Card 2 btn', () => {
             //act
             action.click(element.all_btn)
 
@@ -204,7 +130,7 @@ describe('Home Page Test', () => {
             assert.check_Element(element.all_event_card2)
         })
 
-        it('[Check Element] => Upcoming - Event Card 1 btn', () => {
+        it('[Element] => Upcoming - Event Card 1 btn', () => {
             //act
             action.click(element.upcoming_event_btn)
 
@@ -212,7 +138,7 @@ describe('Home Page Test', () => {
             assert.check_Element(element.upcoming_event_card1)
         })
 
-        it('[Check Element] => Upcoming - Event Card 2 btn', () => {
+        it('[Element] => Upcoming - Event Card 2 btn', () => {
             //act
             action.click(element.upcoming_event_btn)
 
@@ -220,7 +146,7 @@ describe('Home Page Test', () => {
             assert.check_Element(element.upcoming_event_card2)
         })
 
-        it('[Check Element] => Past - Event Card 1 btn', () => {
+        it('[Element] => Past - Event Card 1 btn', () => {
             //act
             action.click(element.past_event_btn)
 
@@ -228,7 +154,7 @@ describe('Home Page Test', () => {
             assert.check_Element(element.past_event_card1)
         })
 
-        it('[Check Element] => Past - Event Card 2 btn', () => {
+        it('[Element] => Past - Event Card 2 btn', () => {
             //act
             action.click(element.past_event_btn)
 
@@ -236,316 +162,339 @@ describe('Home Page Test', () => {
             assert.check_Element(element.past_event_card2)
         })
 
-        it('[Check Element] => All - Read More Card 1 btn', () => {
+        it('[Element] => All - Read More Card 1 btn', () => {
             //act
             action.click(element.all_btn)
 
             //assert
             assert.check_Element(element.all_read_more_card1_btn)
-            assert.check_text(element.all_read_more_card1_btn, 'Read More >>')
         })
 
-        it('[Check Element] => All - Read More Card 2 btn', () => {
+        it('[Element] => All - Read More Card 2 btn', () => {
             //act
             action.click(element.all_btn)
 
             //assert
             assert.check_Element(element.all_read_more_card2_btn)
-            assert.check_text(element.all_read_more_card2_btn, 'Read More >>')
         })
 
-        it('[Check Element] => Upcoming - Read More Card 1 btn', () => {
+        it('[Element] => Upcoming - Read More Card 1 btn', () => {
             //act
             action.click(element.upcoming_event_btn)
 
             //assert
             assert.check_Element(element.upcoming_read_more_card1_btn)
-            assert.check_text(element.upcoming_read_more_card1_btn, 'Read More >>')
         })
 
-        it('[Check Element] => Upcoming - Read More Card 2 btn', () => {
+        it('[Element] => Upcoming - Read More Card 2 btn', () => {
             //act
             action.click(element.upcoming_event_btn)
 
             //assert
             assert.check_Element(element.upcoming_read_more_card2_btn)
-            assert.check_text(element.upcoming_read_more_card2_btn, 'Read More >>')
         })
 
-        it('[Check Element] => Past - Read More Card 1 btn', () => {
+        it('[Element] => Past - Read More Card 1 btn', () => {
             //act
             action.click(element.past_event_btn)
 
             //assert
             assert.check_Element(element.past_read_more_card1_btn)
-            assert.check_text(element.past_read_more_card1_btn, 'Read More >>')
         })
 
-        it('[Check Element] => Past - Read More Card 2 btn', () => {
+        it('[Element] => Past - Read More Card 2 btn', () => {
             //act
             action.click(element.past_event_btn)
 
             //assert
             assert.check_Element(element.past_read_more_card2_btn)
-            assert.check_text(element.past_read_more_card2_btn, 'Read More >>')
         })
 
-        it('[Check Element] => Partners Bar', () => {
+        it('[Element] => Partners Bar', () => {
             //assert
             assert.check_Element(element.partner_bar)
         })
     })
 
-    context('Home Test', () => {
-        context('[Check Home Button]', () => {
-            it('[Check Action Click] => Next btn', () => {
-                //act
-                action.click(element.next_btn)
+    context('Home Test Case', () => {
+        context('[Check Name & Action Home Button]', () => {
+            context('Check Name Home Button', () => {
+                it('[Text] => Next btn', () => {
+                    //assert
+                    assert.check_text(element.actual_next_btn, expect.expect_next_btn_name)
+                })
 
-                //assert
-                assert.check_text_contain(element.assert_next_btn, 'with FINSTABLE')
+                it('[Text] => Scroll Down btn', () => {
+                    //assert
+                    assert.check_text(element.actual_scroll_down_btn, expect.expect_scroll_down_btn_name)
+                })
+
+                it('[Text] => Contact Us btn', () => {
+                    //assert
+                    assert.check_text(element.actual_contact_btn, expect.expect_contact_btn_name)
+                })
+
+                it('[Text] => About Us btn', () => {
+                    //assert
+                    assert.check_text(element.actual_about_us_btn, expect.expect_about_us_btn_name)
+                })
             })
 
-            it('[Check Action Click] => Scroll down btn', () => {
-                //act
-                action.click(element.scroll_down_btn)
+            context('Check Action', () => {
+                it('[Click] => Next btn', () => {
+                    //act
+                    action.click(element.next_btn)
 
-                //assert
-                assert.check_scroll_down()
-            })
+                    //assert
+                    assert.check_text_contain(element.actual_next_btn, expect.expect_next_btn)
+                })
 
-            it('[Check Action Click] => Rocket btn', () => {
-                //act
-                action.click(element.rocket_btn)
+                it('[Click] => Scroll down btn', () => {
+                    //act
+                    action.click(element.scroll_down_btn)
 
-                //assert
-                assert.check_scroll_top()
-            })
+                    //assert
+                    assert.check_scroll_down()
+                })
 
-            it('[Check Action Click] => Contact Us btn', () => {
-                //act
-                action.click(element.contact_btn)
+                it('[Click] => Rocket btn', () => {
+                    //act
+                    action.click(element.rocket_btn)
 
-                //assert
-                assert.check_url('https://devwebfin.finstable.co.th/en/contacts')
+                    //assert
+                    assert.check_scroll_top()
+                })
+
+                it('[Click] => Contact Us btn', () => {
+                    //act
+                    action.click(element.contact_btn)
+
+                    //assert
+                    assert.check_url(expect.expect_contact_url)
+                })
+
+                it('[Click] => About Us btn', () => {
+                    //act
+                    action.click(element.about_us_btn)
+
+                    //assert
+                    assert.check_url(expect.expect_about_us_url)
+                })
             })
         })
+        context('Check Text & Action Our Service', () => {
+            context('Text', () => {
+                it('[Text] => Our Services txt', () => {
+                    //assert
+                    assert.check_text(element.actual_our_service_txt, expect.expect_our_service_txt)
+                })
 
-        context('Check Our Service Button', () => {
-            before(() => {
-                cy.visit(Cypress.env('finweb_url'))
-            })
-            it('[Check Action Hover] => Project Profiling card', () => {
-                //act
-                action.mouse_hover(element.profiling_card)
+                it('[Text] => Project Profiling Card', () => {
+                    //assert
+                    assert.check_text(element.actual_profiling_card, expect.expect_profiling_card_btn)
+                })
 
-                //assert
-                assert.check_text_contain(element.assert_profiling_card, 'Business & Financial Analysis for designing the White Paper & Pitch Deck')
-            })
+                it('[Text] => Token Economics Card', () => {
+                    //assert
+                    assert.check_text(element.actual_token_eco_card, expect.expect_token_eco_card_btn)
+                })
 
-            it('[Check Action Hover] => Token Economics card', () => {
-                //act
-                action.mouse_hover(element.token_eco_card)
+                it('[Text] => Tokenization Card', () => {
+                    //assert
+                    assert.check_text(element.actual_tokenization_card, expect.expect_tokenization_card_btn)
+                })
 
-                //assert
-                assert.check_text_contain(element.assert_token_eco_card, 'Economic System Design for Digital Asset Incentive and Value')
-            })
+                it('[Text] => Blockchain Applications Card', () => {
+                    //assert
+                    assert.check_text(element.actual_blockain_card, expect.expect_blockain_card_btn)
+                })
 
-            it('[Check Action Hover] => Tokenization card', () => {
-                //act
-                action.mouse_hover(element.tokenization_card)
+                it('[Text] => Project Launching Card', () => {
+                    //assert
+                    assert.check_text(element.actual_project_launch_card, expect.expect_project_launch_card_btn)
+                })
 
-                //assert
-                assert.check_text_contain(element.assert_tokenization_card, 'Minting Tokens via Blockchain Technology (ERC, TRC, BSC, FIRO, TERRA, BITKUB)')
-            })
-
-            it('[Check Action Hover] => Blockchain Applications cars', () => {
-                //act
-                action.mouse_hover(element.blockain_card)
-
-                //assert
-                assert.check_text_contain(element.assert_blockain_card, 'Blockchain Platform Development in DeFi and CeFi concepts')
-            })
-
-            it('[Check Action Hover] => Project Launching card', () => {
-                //act
-                action.mouse_hover(element.project_launch_card)
-
-                //assert
-                assert.check_text_contain(element.assert_project_launch_card, 'Announcement and Tokens Distribution on Blockchain Platforms')
+                it('[Text] => Market Maker Card', () => {
+                    //assert
+                    assert.check_text(element.actual_market_maker_card, expect.expect_market_maker_card_btn)
+                })
             })
 
-            it('[Check Action Hover] => Market Maker card', () => {
-                //act
-                action.mouse_hover(element.market_maker_card)
+            context('Hover', () => {
+                it('[Hover] => Project Profiling Card', () => {
+                    //act
+                    action.mouse_hover(element.profiling_card)
 
-                //assert
-                assert.check_text_contain(element.assert_market_maker_card, 'Providing Liquidity on Defined BUY SELL Cryptocurrency in Crypto Exchange')
+                    //assert
+                    assert.check_Element(element.actual_profiling_card)
+                })
+
+                it('[Hover] => Token Economics Card', () => {
+                    //act
+                    action.mouse_hover(element.token_eco_card)
+
+                    //assert
+                    assert.check_Element(element.actual_token_eco_card)
+                })
+
+                it('[Hover] => Tokenization Card', () => {
+                    //act
+                    action.mouse_hover(element.tokenization_card)
+
+                    //assert
+                    assert.check_Element(element.actual_tokenization_card)
+                })
+
+                it('[Hover] => Blockchain Applications Card', () => {
+                    //act
+                    action.mouse_hover(element.blockain_card)
+
+                    //assert
+                    assert.check_Element(element.actual_blockain_card)
+                })
+
+                it('[Hover] => Project Launching Card', () => {
+                    //act
+                    action.mouse_hover(element.project_launch_card)
+
+                    //assert
+                    assert.check_Element(element.actual_project_launch_card)
+                })
+
+                it('[Hover] => Market Maker Card', () => {
+                    //act
+                    action.mouse_hover(element.market_maker_card)
+
+                    //assert
+                    assert.check_Element(element.actual_market_maker_card)
+                })
+            })
+
+            context('Content', () => {
+                it('[Text] => Project Profiling Content', () => {
+                    //act
+                    action.mouse_hover(element.profiling_card)
+
+                    //assert
+                    assert.check_text(element.actual_profiling_card_content, expect.expect_profiling_card_btn)
+                })
+
+                it('[Text] => Token Economics Content', () => {
+                    //act
+                    action.mouse_hover(element.token_eco_card)
+
+                    //assert
+                    assert.check_text(element.actual_token_eco_card_content, expect.expect_token_eco_card_content)
+                })
+
+                it('[Text] => Tokenization Content', () => {
+                    //act
+                    action.mouse_hover(element.tokenization_card)
+
+                    //assert
+                    assert.check_text(element.actual_tokenization_card_content, expect.expect_tokenization_card_content)
+                })
+
+                it('[Text] => Blockchain Applications Content', () => {
+                    //act
+                    action.mouse_hover(element.blockain_card)
+
+                    //assert
+                    assert.check_text(element.actual_blockain_card_content, expect.expect_blockain_card_content)
+                })
+
+                it('[Text] => Project Launching Content', () => {
+                    //act
+                    action.mouse_hover(element.project_launch_card)
+
+                    //assert
+                    assert.check_text(element.actual_project_launch_card_content, expect.expect_project_launch_card_content)
+                })
+
+                it('[Text] => Market Maker Content', () => {
+                    //act
+                    action.mouse_hover(element.market_maker_card)
+
+                    //assert
+                    assert.check_text(element.actual_market_maker_card_content, expect.expect_market_maker_card_content)
+                })
             })
         })
 
         context('Check Our Work Button', () => {
-            it('[Check Action Click] => Select Card 1 btn', () => {
-                //act
-                action.click(element.select_card1_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card1_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card1_btn, 'href', 'https://weserve.co.th/')  //Weserv
+            beforeEach(() => {
+                cy.visit(Cypress.env('finweb_url'))
             })
-
-            it('[Check Action Click] => Select Card 2 btn', () => {
+            it('[Click] => Card 1 btn', () => {
                 //act
-                action.click(element.select_card2_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card2_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card2_btn, 'href', 'https://www.tigermuaythai.com/') //tigeruaythai
-            })
-
-            it('[Check Action Click] => Select Card 3 btn', () => {
-                //act
-                action.click(element.select_card3_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card3_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card3_btn, 'href', 'https://www.yuemmaithailand.com/') //ยืมมั้ย
-            })
-
-            it('[Check Action Click] => Select Card 4 btn', () => {
-                //act
-                action.click(element.select_card4_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card4_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card4_btn, 'href', '') // mou
-            })
-
-            it('[Check Action Click] => Select Card 5 btn', () => {
-                //act
-                action.click(element.select_card5_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card5_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card5_btn, 'href', 'https://www.xtatuz.com/') //xtatuz
-            })
-
-            it('[Check Action Click] => Select Card 6 btn', () => {
-                //act
-                action.click(element.select_card6_btn)
-
-                //assert
-                assert.check_attr(element.assert_select_card6_btn, 'target', '_blank')
-                assert.check_attr(element.assert_select_card6_btn, 'href', '') //
-            })
-
-            it('[Check Action Click] => Card 1 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
-                //act
-                action.click(element.select_card1_btn)
                 action.remove_attr(element.card1_btn, 'target')
                 action.click(element.card1_btn)
 
                 //assert
-                assert.check_url('https://weserve.co.th/') //weserve
+                assert.check_url(expect.expect_card1_btn) //weserve
             })
 
-            it('[Check Action Click] => Card 2 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
+            it('[Click] => Card 2 btn', () => {
                 //act
-                action.click(element.select_card2_btn)
                 action.remove_attr(element.card2_btn, 'target')
                 action.click(element.card2_btn)
 
                 //assert
-                assert.check_url('https://www.tigermuaythai.com/') //tigermuaythai
+                assert.check_url(expect.expect_card2_btn) //tigermuaythai
             })
 
-            it('[Check Action Click] => Card 3 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
+            it('[Click] => Card 3 btn', () => {
                 //act
-                action.click(element.select_card3_btn)
                 action.remove_attr(element.card3_btn, 'target')
                 action.click(element.card3_btn)
 
                 //assert
-                assert.check_url('https://www.yuemmaithailand.com/') //ยืมมั้ย
+                assert.check_url(expect.expect_card3_btn) //ยืมมั้ย
             })
 
-            it('[Check Action Click] => Card 4 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
-                //act
-                action.click(element.select_card4_btn)
-                action.remove_attr(element.card4_btn, 'target')
-                action.click(element.card4_btn)
-
-                //assert
-                assert.check_url('') //mou
-            })
-
-            it('[Check Action Click] => Card 5 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
-                //act
-                action.click(element.select_card5_btn)
-                action.remove_attr(element.card5_btn, 'target')
-                action.click(element.card5_btn)
-
-                //assert
-                assert.check_url('https://www.xtatuz.com/') //xtatuz
-            })
-
-            it('[Check Action Click] => Card 6 btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
-                //act
-                action.click(element.select_card6_btn)
-                action.remove_attr(element.card6_btn, 'target')
-                action.click(element.card6_btn)
-
-                //assert
-                assert.check_url('') //
-            })
-
-            it('[Check Action Click] => Read More btn', () => {
-                before(() => {
-                    cy.visit(Cypress.env('finweb_url'))
-                })
-
+            it('[Click] => Read More btn', () => {
                 //act
                 action.click(element.read_more_btn)
 
                 //assert
-                assert.check_url('')
+                assert.check_url(expect.expect_read_more_btn)
+            })
+
+            it('[Text] => Read More btn', () => {
+                //act
+                action.click(element.read_more_btn)
+
+                //assert
+                assert.check_text(element.actual_read_more_btn_name, expect.expect_read_more_btn_name)
             })
         })
 
-        context('Check Corporate Events Btn', () => {
-            context('Check Action Click Event Button', () => {
+        context('Check Name & Action Corporate Events Btn', () => {
+            context('Check Name Event Button', () => {
+                it('[Text] => All Event btn', () => {
+                    //assert
+                    assert.check_text(element.actual_all_event_btn, expect.expect_all_event_btn_name)
+                })
 
+                it('[Text] => Upcoming Event btn', () => {
+                    //assert
+                    assert.check_text(element.actual_upcoming_event_btn, expect.expect_upcoming_event_btn_name)
+                })
+
+                it('[Text] => Past Event btn', () => {
+                    //assert
+                    assert.check_text(element.actual_past_event_btn, expect.expect_past_event_btn_name)
+                })
+            })
+
+            context('Click Event Button', () => {
                 it('[Click] => All - Event btn', () => {
                     //act
                     action.click(element.all_btn)
 
                     //assert
-                    assert.check_text_2_opt(element.assert_all_event_1_btn, 'Coming Soon...', '21/06/2023 - 26/06/2023')
-                    assert.check_text_2_opt(element.assert_all_event_2_btn, 'Coming Soon...', '21/06/2023 - 26/06/2023')
+                    assert.check_text_2_opt(element.actual_all_event_1_btn, expect.expect_event_coming_soon_status, expect.expect_event_date1_status)
+                    assert.check_text_2_opt(element.actual_all_event_2_btn, expect.expect_event_coming_soon_status, expect.expect_event_date1_status)
                 })
 
                 it('[Click] => Past - Event btn', () => {
@@ -553,8 +502,8 @@ describe('Home Page Test', () => {
                     action.click(element.past_event_btn)
 
                     //assert
-                    assert.check_text(element.assert_upcoming_event_1_btn, '29/06/2023 - 30/06/2023')
-                    assert.check_text(element.assert_upcoming_event_2_btn, '29/06/2023 - 30/06/2023')
+                    assert.check_text(element.actual_upcoming_event_1_btn, expect.expect_event_date2_status)
+                    assert.check_text(element.actual_upcoming_event_2_btn, expect.expect_event_date2_status)
                 })
 
                 it('[Click] => Upcoming - Event btn', () => {
@@ -562,19 +511,19 @@ describe('Home Page Test', () => {
                     action.click(element.upcoming_event_btn)
 
                     //assert
-                    assert.check_text(element.assert_past_event_1_btn, 'Coming Soon...')
-                    assert.check_text(element.assert_past_event_2_btn, 'Coming Soon...')
+                    assert.check_text(element.actual_past_event_1_btn, expect.expect_event_coming_soon_status)
+                    assert.check_text(element.actual_past_event_2_btn, expect.expect_event_coming_soon_status)
                 })
             })
 
-            context('Check Action Hover Picture Event Card', () => {
+            context('Hover Picture Event Card', () => {
                 it('[Hover] => All - Event Picture Card 1', () => {
                     //act
                     action.click(element.all_btn)
                     action.mouse_hover(element.all_event_picture_card1)
 
                     //assert
-                    assert.check_text(element.assert_all_event_picture_card1, 'Read')
+                    assert.check_text(element.actual_all_event_picture_card1, expect.expect_all_event_picture_card1)
                 })
 
                 it('[Hover] => All - Event Picture Card 2', () => {
@@ -583,7 +532,7 @@ describe('Home Page Test', () => {
                     action.mouse_hover(element.all_event_picture_card2)
 
                     //assert
-                    assert.check_text(element.assert_all_event_picture_card2, 'Read')
+                    assert.check_text(element.actual_all_event_picture_card2, expect.expect_all_event_picture_card2)
                 })
 
                 it('[Hover] => Upcoming - Event Picture Card 1', () => {
@@ -592,7 +541,7 @@ describe('Home Page Test', () => {
                     action.mouse_hover(element.upcoming_event_picture_card1)
 
                     //assert
-                    assert.check_text(element.assert_upcoming_event_picture_card1, 'Read')
+                    assert.check_text(element.actual_upcoming_event_picture_card1, expect.expect_upcoming_event_picture_card1)
                 })
 
                 it('[Hover] => Upcoming - Event Picture Card 2', () => {
@@ -601,7 +550,7 @@ describe('Home Page Test', () => {
                     action.mouse_hover(element.upcoming_event_picture_card2)
 
                     //assert
-                    assert.check_text(element.assert_upcoming_event_picture_card2, 'Read')
+                    assert.check_text(element.actual_upcoming_event_picture_card2, expect.expect_upcoming_event_picture_card2)
                 })
 
                 it('[Hover] => Past - Event Picture Card 1', () => {
@@ -610,7 +559,7 @@ describe('Home Page Test', () => {
                     action.mouse_hover(element.past_event_picture_card1)
 
                     //assert
-                    assert.check_text(element.assert_past_event_picture_card1, 'Read')
+                    assert.check_text(element.actual_past_event_picture_card1, expect.expect_past_event_picture_card1)
                 })
 
                 it('[Hover] => Past - Event Picture Card 2', () => {
@@ -619,72 +568,124 @@ describe('Home Page Test', () => {
                     action.mouse_hover(element.past_event_picture_card2)
 
                     //assert
-                    assert.check_text(element.assert_past_event_picture_card2, 'Read')
+                    assert.check_text(element.actual_past_event_picture_card2, expect.expect_past_event_picture_card2)
                 })
             })
 
-            context('Check Action Click Read More on Event Card', () => {
-                beforeEach(() => {
-                    action.visit(Cypress.env('finweb_url'))
-                })
-                it('[Click] => All -> Event Card 1 -> Read More btn', () => {
-                    //act
-                    action.click(element.all_btn)
-                    assert.get_text(element.all_topic_card1_txt) // get topic card text
-                    action.click(element.all_read_more_card1_btn)
+            context('Check Name & Action Read More on Event Card', () => {
+                context('Check Name Read More Button', () => {
+                    it('[Text] => All -> Event Card 1 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_all_topic_card1_txt)
-                })
+                        //assert
+                        assert.check_text(element.actual_all_read_more_card1_btn_name, expect.expect_all_read_more_card1_btn_name)
+                    })
 
-                it('[Click] => All -> Event Card 2 -> Read More btn', () => {
-                    //act
-                    action.click(element.all_btn)
-                    assert.get_text(element.all_topic_card2_txt) // get topic card text
-                    action.click(element.all_read_more_card2_btn)
+                    it('[Text] => All -> Event Card 2 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_all_topic_card2_txt)
-                })
+                        //assert
+                        assert.check_text(element.actual_all_read_more_card2_btn_name, expect.expect_all_read_more_card2_btn_name)
+                    })
 
-                it('[Click] => Upcoming -> Event Card 1 -> Read More btn', () => {
-                    //act
-                    action.click(element.upcoming_event_btn)
-                    assert.get_text(element.upcoming_topic_card1_txt) // get topic card text
-                    action.click(element.upcoming_read_more_card1_btn)
+                    it('[Text] => Upcoming -> Event Card 1 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_upcoming_topic_card1_txt)
-                })
+                        //assert
+                        assert.check_text(element.actual_upcoming_read_more_card1_btn_name, expect.expect_upcoming_read_more_card1_btn_name)
+                    })
 
-                it('[Click] => Upcoming -> Event Card 2 -> Read More btn', () => {
-                    //act
-                    action.click(element.upcoming_event_btn)
-                    assert.get_text(element.upcoming_topic_card2_txt) // get topic card text
-                    action.click(element.upcoming_read_more_card2_btn)
+                    it('[Text] => Upcoming -> Event Card 2 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_upcoming_topic_card2_txt)
-                })
+                        //assert
+                        assert.check_text(element.actual_upcoming_read_more_card2_btn_name, expect.expect_upcoming_read_more_card2_btn_name)
+                    })
 
-                it('[Click] => Past -> Event Card 1 -> Read More btn', () => {
-                    //act
-                    action.click(element.past_event_btn)
-                    assert.get_text(element.past_topic_card1_txt) // get topic card text
-                    action.click(element.past_read_more_card1_btn)
+                    it('[Text] => Past -> Event Card 1 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_past_topic_card1_txt)
+                        //assert
+                        assert.check_text(element.actual_past_read_more_card1_btn_name, expect.expect_past_read_more_card1_btn_name)
+                    })
+
+                    it('[Text] => Past -> Event Card 2 -> Read More btn name', () => {
+                        //act
+                        action.click(element.all_btn)
+
+                        //assert
+                        assert.check_text(element.actual_past_read_more_card2_btn_name, expect.expect_past_read_more_card2_btn_name)
+                    })
                 })
 
-                it('[Click] => Past -> Event Card 2 -> Read More btn', () => {
-                    //act
-                    action.click(element.past_event_btn)
-                    assert.get_text(element.past_topic_card2_txt) // get topic card text
-                    action.click(element.past_read_more_card2_btn)
+                context('Check Action', () => {
+                    beforeEach(() => {
+                        action.visit(Cypress.env('finweb_url'))
+                    })
+                    it('[Click] => All -> Event Card 1 -> Read More btn', () => {
+                        //act
+                        action.click(element.all_btn)
+                        assert.get_text(element.all_topic_card1_txt) // get topic card text
+                        action.click(element.all_read_more_card1_btn)
 
-                    //assert
-                    assert.check_topic_card(element.assert_past_topic_card2_txt)
+                        //assert
+                        assert.check_topic_card(element.actual_all_topic_card1_txt)
+                    })
+
+                    it('[Click] => All -> Event Card 2 -> Read More btn', () => {
+                        //act
+                        action.click(element.all_btn)
+                        assert.get_text(element.all_topic_card2_txt) // get topic card text
+                        action.click(element.all_read_more_card2_btn)
+
+                        //assert
+                        assert.check_topic_card(element.actual_all_topic_card2_txt)
+                    })
+
+                    it('[Click] => Upcoming -> Event Card 1 -> Read More btn', () => {
+                        //act
+                        action.click(element.upcoming_event_btn)
+                        assert.get_text(element.upcoming_topic_card1_txt) // get topic card text
+                        action.click(element.upcoming_read_more_card1_btn)
+
+                        //assert
+                        assert.check_topic_card(element.actual_upcoming_topic_card1_txt)
+                    })
+
+                    it('[Click] => Upcoming -> Event Card 2 -> Read More btn', () => {
+                        //act
+                        action.click(element.upcoming_event_btn)
+                        assert.get_text(element.upcoming_topic_card2_txt) // get topic card text
+                        action.click(element.upcoming_read_more_card2_btn)
+
+                        //assert
+                        assert.check_topic_card(element.actual_upcoming_topic_card2_txt)
+                    })
+
+                    it('[Click] => Past -> Event Card 1 -> Read More btn', () => {
+                        //act
+                        action.click(element.past_event_btn)
+                        assert.get_text(element.past_topic_card1_txt) // get topic card text
+                        action.click(element.past_read_more_card1_btn)
+
+                        //assert
+                        assert.check_topic_card(element.actual_past_topic_card1_txt)
+                    })
+
+                    it('[Click] => Past -> Event Card 2 -> Read More btn', () => {
+                        //act
+                        action.click(element.past_event_btn)
+                        assert.get_text(element.past_topic_card2_txt) // get topic card text
+                        action.click(element.past_read_more_card2_btn)
+
+                        //assert
+                        assert.check_topic_card(element.actual_past_topic_card2_txt)
+                    })
                 })
             })
         })
