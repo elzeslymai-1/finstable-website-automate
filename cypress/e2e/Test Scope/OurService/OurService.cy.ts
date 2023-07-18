@@ -15,191 +15,191 @@ describe('Our Service Page Test', () => {
     })
     context('Check Our Service Element are Displayed', () => {
         context('Our Service', () => {
-            it('[Check Element] => Our Service Topic txt', () => {
+            it('[Element] => Our Service Topic txt', () => {
                 //assert
                 assert.check_Element(element.our_service_topic_txt)
             })
 
-            it('[Check Element] => Our Service txt', () => {
+            it('[Element] => Our Service txt', () => {
                 //assert
                 assert.check_Element(element.our_service_txt)
             })
 
-            it('[Check Element] => Project Profiling card', () => {
+            it('[Element] => Project Profiling card', () => {
                 //Assert
                 assert.check_Element(element.profiling_card)
             })
 
-            it('[Check Element] => Token Economics card', () => {
+            it('[Element] => Token Economics card', () => {
                 //Assert
                 assert.check_Element(element.token_eco_card)
             })
 
-            it('[Check Element] => Tokenization card', () => {
+            it('[Element] => Tokenization card', () => {
                 //assert
                 assert.check_Element(element.tokenization_card)
             })
 
-            it('[Check Element] => Blockchain Applications card', () => {
+            it('[Element] => Blockchain Applications card', () => {
                 //assert
                 assert.check_Element(element.blockain_card)
             })
 
-            it('[Check Element] => Project Launching card', () => {
+            it('[Element] => Project Launching card', () => {
                 //assert
                 assert.check_Element(element.project_launch_card)
             })
 
-            it('[Check Element] => Market Maker card', () => {
+            it('[Element] => Market Maker card', () => {
                 //assert
                 assert.check_Element(element.market_maker_card)
             })
         })
 
         context('Our Affiliates', () => {
-            it('[Check Element] => Our Affiliate txt', () => {
+            it('[Element] => Our Affiliate txt', () => {
                 //assert
                 assert.check_Element(element.our_affiliate_txt)
             })
 
-            it('[Check Element] => Non-License txt', () => {
+            it('[Element] => Non-License txt', () => {
                 //assert
                 assert.check_Element(element.non_license_txt)
             })
 
-            it('[Check Element] => Fin Holding txt', () => {
+            it('[Element] => Fin Holding txt', () => {
                 //assert
                 assert.check_Element(element.fin_holding_txt)
             })
 
-            it('[Check Element] => Fin Holding Content txt', () => {
+            it('[Element] => Fin Holding Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_holding_content_txt)
             })
 
-            it('[Check Element] => Finstable txt', () => {
+            it('[Element] => Finstable txt', () => {
                 //assert
                 assert.check_Element(element.finstable_txt)
             })
 
-            it('[Check Element] => Finstable Content txt', () => {
+            it('[Element] => Finstable Content txt', () => {
                 //assert
                 assert.check_Element(element.finstable_content_txt)
             })
 
-            it('[Check Element] => Fin Adoption txt', () => {
+            it('[Element] => Fin Adoption txt', () => {
                 //assert
                 assert.check_Element(element.fin_adoption_txt)
             })
 
-            it('[Check Element] => Fin Adoption Content txt', () => {
+            it('[Element] => Fin Adoption Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_adoption_content_txt)
             })
 
-            it('[Check Element] => License txt', () => {
+            it('[Element] => License txt', () => {
                 //assert
                 assert.check_Element(element.license_txt)
             })
 
-            it('[Check Element] => Fin ICO txt', () => {
+            it('[Element] => Fin ICO txt', () => {
                 //assert
                 assert.check_Element(element.fin_ico_txt)
             })
 
-            it('[Check Element] => Fin ICO Content txt', () => {
+            it('[Element] => Fin ICO Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_ico_content_txt)
             })
 
-            it('[Check Element] => Fin Dex txt', () => {
+            it('[Element] => Fin Dex txt', () => {
                 //assert
                 assert.check_Element(element.fin_dex_txt)
             })
 
-            it('[Check Element] => Fin Dex Content', () => {
+            it('[Element] => Fin Dex Content', () => {
                 //assert
                 assert.check_Element(element.fin_dex_content_txt)
             })
 
-            it('[Check Element] => Fin Custodian txt', () => {
+            it('[Element] => Fin Custodian txt', () => {
                 //assert
                 assert.check_Element(element.fin_custodian_content_txt)
             })
 
-            it('[Check Element] => Fin Custodian Content txt', () => {
+            it('[Element] => Fin Custodian Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_custodian_content_txt)
             })
 
-            it('[Check Element] => Fin Advisory txt', () => {
+            it('[Element] => Fin Advisory txt', () => {
                 //assert
                 assert.check_Element(element.fin_advisory_txt)
             })
 
-            it('[Check Element] => Fin Advisory Content txt', () => {
+            it('[Element] => Fin Advisory Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_advisory_content_txt)
             })
 
-            it('[Check Element] => Fin Broker txt', () => {
+            it('[Element] => Fin Broker txt', () => {
                 //assert
                 assert.check_Element(element.fin_broker_txt)
             })
 
-            it('[Check Element] => Fin Broker Content txt', () => {
+            it('[Element] => Fin Broker Content txt', () => {
                 //assert
                 assert.check_Element(element.fin_broker_content_txt)
             })
 
-            it('[Check Element] => Findex Fund txt', () => {
+            it('[Element] => Findex Fund txt', () => {
                 //assert
                 assert.check_Element(element.findex_fund_txt)
             })
 
-            it('[Check Element] => Findex Fund Content txt', () => {
+            it('[Element] => Findex Fund Content txt', () => {
                 //assert
                 assert.check_Element(element.findex_fund_content_txt)
             })
         })
 
         context('Finstable Project', () => {
-            it('[Check Element] => Finstable Project txt', () => {
+            it('[Element] => Finstable Project txt', () => {
                 //assert
                 assert.check_Element(element.finstable_project_txt)
             })
 
-            it('[Check Element] => Select Project Card 1 btn', () => {
+            it('[Element] => Select Project Card 1 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card1_btn)
             })
 
-            it('[Check Element] => Select Project Card 2 btn', () => {
+            it('[Element] => Select Project Card 2 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card2_btn)
             })
 
-            it('[Check Element] => Select Project Card 3 btn', () => {
+            it('[Element] => Select Project Card 3 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card3_btn)
             })
 
-            it('[Check Element] => Select Project Card 4 btn', () => {
+            it('[Element] => Select Project Card 4 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card4_btn)
             })
 
-            it('[Check Element] => Select Project Card 5 btn', () => {
+            it('[Element] => Select Project Card 5 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card5_btn)
             })
 
-            it('[Check Element] => Select Project Card 6 btn', () => {
+            it('[Element] => Select Project Card 6 btn', () => {
                 //assert
                 assert.check_Element(element.select_project_card6_btn)
             })
 
-            it('[Check Element] => Project Card 1 btn', () => {
+            it('[Element] => Project Card 1 btn', () => {
                 //act
                 action.click(element.select_project_card1_btn)
 
@@ -207,7 +207,7 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card1_btn)
             })
 
-            it('[Check Element] => Project Card 2 btn', () => {
+            it('[Element] => Project Card 2 btn', () => {
                 //act
                 action.click(element.select_project_card2_btn)
 
@@ -215,7 +215,7 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card2_btn)
             })
 
-            it('[Check Element] => Project Card 3 btn', () => {
+            it('[Element] => Project Card 3 btn', () => {
                 //act
                 action.click(element.select_project_card3_btn)
 
@@ -223,7 +223,7 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card3_btn)
             })
 
-            it('[Check Element] => Project Card 4 btn', () => {
+            it('[Element] => Project Card 4 btn', () => {
                 //act
                 action.click(element.select_project_card4_btn)
 
@@ -231,7 +231,7 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card4_btn)
             })
 
-            it('[Check Element] => Project Card 5 btn', () => {
+            it('[Element] => Project Card 5 btn', () => {
                 //act
                 action.click(element.select_project_card5_btn)
 
@@ -239,7 +239,7 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card5_btn)
             })
 
-            it('[Check Element] => Project Card 6 btn', () => {
+            it('[Element] => Project Card 6 btn', () => {
                 //act
                 action.click(element.select_project_card6_btn)
 
@@ -247,156 +247,156 @@ describe('Our Service Page Test', () => {
                 assert.check_Element(element.project_card6_btn)
             })
 
-            it('[Check Element] => Left btn', () => {
+            it('[Element] => Left btn', () => {
                 //assert
                 assert.check_Element(element.left_btn)
             })
 
-            it('[Check Element] => Right btn', () => {
+            it('[Element] => Right btn', () => {
                 //assert
                 assert.check_Element(element.right_btn)
             })
         })
 
         context('Customer', () => {
-            it('[Check Element] => Customer txt', () => {
+            it('[Element] => Customer txt', () => {
                 //assert
                 assert.check_Element(element.customer_txt)
             })
 
-            it('[Check Element] => Customer Card 1 btn', () => {
+            it('[Element] => Customer Card 1 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card1_btn)
             })
 
-            it('[Check Element] => Customer Card 2 btn', () => {
+            it('[Element] => Customer Card 2 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card2_btn)
             })
 
-            it('[Check Element] => Customer Card 3 btn', () => {
+            it('[Element] => Customer Card 3 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card3_btn)
             })
 
-            it('[Check Element] => Customer Card 4 btn', () => {
+            it('[Element] => Customer Card 4 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card4_btn)
             })
 
-            it('[Check Element] => Customer Card 5 btn', () => {
+            it('[Element] => Customer Card 5 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card5_btn)
             })
 
-            it('[Check Element] => Customer Card 6 btn', () => {
+            it('[Element] => Customer Card 6 btn', () => {
                 //assert
                 assert.check_Element(element.customer_card6_btn)
             })
         })
 
         context('Partner', () => {
-            it('[Check Element] => Partners txt', () => {
+            it('[Element] => Partners txt', () => {
                 //assert
                 assert.check_Element(element.partner_txt)
             })
 
-            it('[Check Element] => Partners Card 1 btn', () => {
+            it('[Element] => Partners Card 1 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card1_btn)
             })
 
-            it('[Check Element] => Partners Card 2 btn', () => {
+            it('[Element] => Partners Card 2 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card2_btn)
             })
 
-            it('[Check Element] => Partners Card 3 btn', () => {
+            it('[Element] => Partners Card 3 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card3_btn)
             })
 
-            it('[Check Element] => Partners Card 4 btn', () => {
+            it('[Element] => Partners Card 4 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card4_btn)
             })
 
-            it('[Check Element] => Partners Card 5 btn', () => {
+            it('[Element] => Partners Card 5 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card5_btn)
             })
 
-            it('[Check Element] => Partners Card 6 btn', () => {
+            it('[Element] => Partners Card 6 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card6_btn)
             })
 
-            it('[Check Element] => Partners Card 7 btn', () => {
+            it('[Element] => Partners Card 7 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card7_btn)
             })
 
-            it('[Check Element] => Partners Card 8 btn', () => {
+            it('[Element] => Partners Card 8 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card8_btn)
             })
 
-            it('[Check Element] => Partners Card 9 btn', () => {
+            it('[Element] => Partners Card 9 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card9_btn)
             })
 
-            it('[Check Element] => Partners Card 10 btn', () => {
+            it('[Element] => Partners Card 10 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card10_btn)
             })
 
-            it('[Check Element] => Partners Card 11 btn', () => {
+            it('[Element] => Partners Card 11 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card11_btn)
             })
 
-            it('[Check Element] => Partners Card 12 btn', () => {
+            it('[Element] => Partners Card 12 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card12_btn)
             })
 
-            it('[Check Element] => Partners Card 13 btn', () => {
+            it('[Element] => Partners Card 13 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card13_btn)
             })
 
-            it('[Check Element] => Partners Card 14 btn', () => {
+            it('[Element] => Partners Card 14 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card14_btn)
             })
 
-            it('[Check Element] => Partners Card 15 btn', () => {
+            it('[Element] => Partners Card 15 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card15_btn)
             })
 
-            it('[Check Element] => Partners Card 16 btn', () => {
+            it('[Element] => Partners Card 16 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card16_btn)
             })
 
-            it('[Check Element] => Partners Card 17 btn', () => {
+            it('[Element] => Partners Card 17 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card17_btn)
             })
 
-            it('[Check Element] => Partners Card 18 btn', () => {
+            it('[Element] => Partners Card 18 btn', () => {
                 //assert
                 assert.check_Element(element.partner_card18_btn)
             })
 
-            it('[Check Element] => View More btn', () => {
+            it('[Element] => View More btn', () => {
                 //assert
                 assert.check_Element(element.view_more_btn)
             })
 
-            it('[Check Element] => View Less btn', () => {
+            it('[Element] => View Less btn', () => {
                 //act
                 action.click(element.view_more_btn)
 
@@ -408,7 +408,7 @@ describe('Our Service Page Test', () => {
 
     context('Our Service Test Case', () => {
         context('Check Text & Action Our Service', () => {
-            context('Text', () => {
+            context('Check Text', () => {
                 it('[Text] => Our Services txt', () => {
                     //assert
                     assert.check_text(element.actual_our_service_txt, expect.expect_our_service_txt)
@@ -421,31 +421,31 @@ describe('Our Service Page Test', () => {
 
                 it('[Text] => Token Economics Card', () => {
                     //assert
-                    assert.check_Element(element.actual_token_eco_card)
+                    assert.check_text(element.actual_token_eco_card, expect.expect_token_eco_card_btn)
                 })
 
                 it('[Text] => Tokenization Card', () => {
                     //assert
-                    assert.check_Element(element.actual_tokenization_card)
+                    assert.check_text(element.actual_tokenization_card, expect.expect_tokenization_card_btn)
                 })
 
                 it('[Text] => Blockchain Applications Card', () => {
                     //assert
-                    assert.check_Element(element.actual_blockain_card)
+                    assert.check_text(element.actual_blockain_card, expect.expect_blockain_card_btn)
                 })
 
                 it('[Text] => Project Launching Card', () => {
                     //assert
-                    assert.check_Element(element.actual_project_launch_card)
+                    assert.check_text(element.actual_project_launch_card, expect.expect_project_launch_card_btn)
                 })
 
                 it('[Text] => Market Maker Card', () => {
                     //assert
-                    assert.check_Element(element.actual_market_maker_card)
+                    assert.check_text(element.actual_market_maker_card, expect.expect_market_maker_card_btn)
                 })
             })
 
-            context('Hover', () => {
+            context('Check Hover', () => {
                 it('[Hover] => Project Profiling Card', () => {
                     //act
                     action.mouse_hover(element.profiling_card)
@@ -495,13 +495,13 @@ describe('Our Service Page Test', () => {
                 })
             })
 
-            context('Content', () => {
+            context('Check Content', () => {
                 it('[Text] => Project Profiling Content', () => {
                     //act
                     action.mouse_hover(element.profiling_card)
 
                     //assert
-                    assert.check_text(element.actual_profiling_card, expect.expect_profiling_card_btn)
+                    assert.check_text(element.actual_profiling_card_content, expect.expect_profiling_card_btn)
                 })
 
                 it('[Text] => Token Economics Content', () => {
@@ -509,7 +509,7 @@ describe('Our Service Page Test', () => {
                     action.mouse_hover(element.token_eco_card)
 
                     //assert
-                    assert.check_Element(element.actual_token_eco_card)
+                    assert.check_text(element.actual_token_eco_card_content, expect.expect_token_eco_card_content)
                 })
 
                 it('[Text] => Tokenization Content', () => {
@@ -517,7 +517,7 @@ describe('Our Service Page Test', () => {
                     action.mouse_hover(element.tokenization_card)
 
                     //assert
-                    assert.check_Element(element.actual_tokenization_card)
+                    assert.check_text(element.actual_tokenization_card_content, expect.expect_tokenization_card_content)
                 })
 
                 it('[Text] => Blockchain Applications Content', () => {
@@ -525,7 +525,7 @@ describe('Our Service Page Test', () => {
                     action.mouse_hover(element.blockain_card)
 
                     //assert
-                    assert.check_Element(element.actual_blockain_card)
+                    assert.check_text(element.actual_blockain_card_content, expect.expect_blockain_card_content)
                 })
 
                 it('[Text] => Project Launching Content', () => {
@@ -533,7 +533,7 @@ describe('Our Service Page Test', () => {
                     action.mouse_hover(element.project_launch_card)
 
                     //assert
-                    assert.check_Element(element.actual_project_launch_card)
+                    assert.check_text(element.actual_project_launch_card_content, expect.expect_project_launch_card_content)
                 })
 
                 it('[Text] => Market Maker Content', () => {
@@ -541,7 +541,7 @@ describe('Our Service Page Test', () => {
                     action.mouse_hover(element.market_maker_card)
 
                     //assert
-                    assert.check_Element(element.actual_market_maker_card)
+                    assert.check_text(element.actual_market_maker_card_content, expect.expect_market_maker_card_content)
                 })
             })
         })
@@ -864,20 +864,20 @@ describe('Our Service Page Test', () => {
                 assert.check_text(element.actual_partner_txt, expect.expect_partner_txt)
             })
 
-            it('[Click] => View More btn',()=>{
+            it('[Click] => View More btn', () => {
                 //act
                 action.click(element.view_more_btn)
 
                 //assert
-                assert.check_text(element.actual_view_more_btn,expect.expect_view_more_btn)
+                assert.check_text(element.actual_view_more_btn, expect.expect_view_more_btn)
             })
 
-            it('[Click] => View less btn',()=>{
+            it('[Click] => View less btn', () => {
                 //act
                 action.click(element.view_less_btn)
 
                 //assert
-                assert.check_text(element.actual_view_less_btn,expect.expect_view_less_btn)
+                assert.check_text(element.actual_view_less_btn, expect.expect_view_less_btn)
             })
 
             it('[Click] => Partner Card 1 btn', () => {

@@ -1,5 +1,7 @@
 export class Header_Element{
-    //Act
+    // ======================================
+    //                ACTION
+    // ======================================
     header_finstable_btn = '[data-test-id="finstable"]'
     header_home_btn = '[data-test-id="home"]'
     header_about_us_btn = '[data-test-id="about"]'
@@ -12,7 +14,9 @@ export class Header_Element{
     lang_th_dropdown_opt = '[data-test-id="th-lang"]'
     lang_en_dropdown_opt = '[data-test-id="en-lang"]'
 
-    //Assert
-    assert_lang_th = ''
-    assert_lang_en = ''
+    // ======================================
+    //                ASSERT
+    // ======================================
+    actual_lang_th = ''
+    actual_lang_en = ''
 }

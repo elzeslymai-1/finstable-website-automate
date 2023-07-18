@@ -107,12 +107,24 @@ export class OurService_Element {
 
     //  OUR SERVICE
     actual_our_service_txt = ''
+
     actual_profiling_card = ''
+    actual_profiling_card_content = ''
+
     actual_token_eco_card = ''
+    actual_token_eco_card_content = ''
+
     actual_tokenization_card = ''
+    actual_tokenization_card_content = ''
+
     actual_blockain_card = ''
+    actual_blockain_card_content = ''
+    
     actual_project_launch_card = ''
+    actual_project_launch_card_content = ''
+    
     actual_market_maker_card = ''
+    actual_market_maker_card_content = ''
 
     //  OUR AFFILIATES
     actual_our_affiliate_txt = ''
