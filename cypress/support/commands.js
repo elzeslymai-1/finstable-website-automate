@@ -2,7 +2,9 @@ import '@testing-library/cypress/add-commands';
 import 'cypress-wait-until';
 
 // playwright commands
-
+Cypress.Commands.add('getElementLength', (selector) => {
+  return cy.get(selector).its('length');
+});
 Cypress.Commands.add('initPlaywright', () => {
   return cy.task('initPlaywright');
 });

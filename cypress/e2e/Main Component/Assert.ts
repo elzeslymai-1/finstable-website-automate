@@ -6,6 +6,12 @@ export class Assertion {
         })
     }
 
+    check_MultiElement(locator: string, index: number) {
+        cy.get(locator).eq(index).then((data) => {
+            expect(data.length).equal(1)
+        })
+    }
+
     check_not_found_element(locator: string) {
         cy.get('body').then((data) => {
             expect(data.find(locator)).equal(0)

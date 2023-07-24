@@ -6,6 +6,7 @@ declare namespace Cypress {
      * @example
      * cy.initPlaywright()
      */
+    getElementLength(selecttor): Chainable<Subject>;
     initPlaywright(): Chainable<Subject>;
     /**
      * Assign currently open tabs with playwright
